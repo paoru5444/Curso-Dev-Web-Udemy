@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos formularios</title>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready( function(){
+			//focus - elemento recebe o foco do cursor
+			/*$('#field1').focus( function(){
+				alert('Elemento focado')
+			})*/
+			//blur - elemento perde o foco do cursor
+			/*$('#field1').blur( function(){
+				alert('Elemento desfocado')
+			})*/
+			//change- utilizada com o elemento select - elemento é modificado
+			$('#field1').change( function(){
+				alert('Elemento alterado')
+			})
+		})		
+
+	</script>
+</head>
+<body>
+	<form>
+		<!-- 
+
+		<label>Entre com o email</label>
+		<input id="field1" type="text" name="">
+		
+		-->
+
+		<select id="field1">
+			<option value="1">Goku</option>
+			<option value="2">Vegeta</option>
+			<option value="3">Gohan</option>
+		</select>
+	</form>
+</body>
+</html>
